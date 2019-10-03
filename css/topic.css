@@ -1,0 +1,19 @@
+.table_of_contents {
+    border: 2px darkgrey solid;
+    background-color: lightgrey;
+    text-align: left;
+}
+
+.table_of_contents a {
+    cursor: pointer;
+    color: black;
+}
+
+.table_of_contents a:visited {
+    color: black;
+}
+
+.table_of_contents a:active {
+    cursor: pointer;
+    color: darkblue;
+}
