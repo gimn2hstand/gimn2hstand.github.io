@@ -41,15 +41,12 @@
     text-align: center;
     position: relative;
     font-size: 17px;
-    font-family: Raleway, serif;
     padding: 10px;
     /*background: rgba(0, 0, 0, 0.8);*/
     margin: 20px 0 0 0
 }
 
 .view p {
-    font-family: Merriweather, serif;
-    font-style: italic;
     font-size: 14px;
     position: relative;
     color: #fff;
@@ -59,13 +56,6 @@
 
 .view a.info {
     display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    font-family: Raleway, serif;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
 }
 
 .view a.info:hover {
@@ -86,7 +76,6 @@
 .view h2 {
     transform: translateY(-100px);
     opacity: 0;
-    font-family: Raleway, serif;
     transition: all 0.2s ease-in-out;
 }
 
@@ -97,10 +86,9 @@
 }
 
 .view a.info {
+    background-color: whitesmoke;
     opacity: 0;
     transition: all 0.2s ease-in-out;
-    background-color: lightgrey;
-    color: black;
 }
 
 .view:hover img {

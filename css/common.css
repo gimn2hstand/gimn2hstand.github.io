@@ -68,6 +68,7 @@
 }
 
 .mdl-navigation-current-topic {
+    cursor: pointer;
     font-weight: bold;
 }
 
