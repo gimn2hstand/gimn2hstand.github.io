@@ -2,6 +2,9 @@
     border: 2px darkgrey solid;
     background-color: lightgrey;
     text-align: left;
+    padding: 10px;
+    width: 75%;
+    margin: 10px auto;
 }
 
 .table_of_contents a {
@@ -16,4 +19,13 @@
 .table_of_contents a:active {
     cursor: pointer;
     color: darkblue;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    margin: 10px;
+    max-width: 80%;
 }

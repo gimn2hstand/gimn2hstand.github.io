@@ -1,7 +1,3 @@
-#content {
-    text-align: center;
-}
-
 .mdl-layout__drawer {
     width: 300px;
     left: -150px;
@@ -73,6 +69,10 @@
 
 .mdl-navigation-current-topic {
     font-weight: bold;
+}
+
+.mdl-layout__content {
+    flex: 1 0 auto;
 }
 
 .mdl-mini-footer {
