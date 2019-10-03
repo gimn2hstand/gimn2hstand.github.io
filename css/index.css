@@ -1,0 +1,57 @@
+.page-content {
+    text-align: center;
+}
+
+.view img {
+    transition: all 0.2s linear;
+    width: 300px;
+    height: 200px;
+}
+
+.view .mask {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.view h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    font-family: Raleway, serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.view p {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.view a.info {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    background-color: lightgrey;
+    color: black;
+}
+
+.view:hover img {
+    transform: scale(1.1);
+}
+
+.view:hover .mask {
+    opacity: 1;
+}
+
+.view:hover h2,
+.view:hover p,
+.view:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.view:hover p {
+    transition-delay: 0.1s;
+}
+
+.view:hover a.info {
+    transition-delay: 0.2s;
+}
