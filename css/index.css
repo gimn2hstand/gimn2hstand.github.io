@@ -2,6 +2,18 @@
     text-align: center;
 }
 
+#view_container {
+    text-align: center;
+    margin: 0;
+}
+
+.view {
+    width: 300px;
+    margin: 0 33px;
+    float: none;
+    display: inline-block;
+}
+
 .view img {
     transition: all 0.2s linear;
     width: 300px;
