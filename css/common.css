@@ -1,5 +1,10 @@
+.mdl-layout__drawer {
+    width: 300px;
+    left: -150px;
+}
+
 .mdl-layout__drawer.is-visible {
-    width: 20%;
+    left: 0;
 }
 
 .mdl-layout__header-title-text {
