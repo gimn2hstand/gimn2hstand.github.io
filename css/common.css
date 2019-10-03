@@ -58,3 +58,7 @@
     -webkit-border-radius: 100px;
     border-radius: 100px;
 }
+
+.mdl-layout__drawer-navigation-subcategory {
+    margin-left: 32px;
+}
