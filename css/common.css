@@ -1,0 +1,55 @@
+.mdl-layout__drawer.is-visible {
+    width: 20%;
+}
+
+.mdl-layout__header-title-text {
+    vertical-align: -3px;
+}
+
+.navigation-logo {
+    width: 48px;
+    height: 48px;
+}
+
+.mdl-layout__header-title-logo {
+    margin-left: -15px;
+}
+
+.mdl-layout-drawer-title-logo {
+    float: left;
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+}
+
+.mdl-layout-drawer-title-area .mdl-layout-title {
+    margin-left: 64px;
+    margin-top: 24px;
+}
+
+.mdl-layout__drawer .mdl-navigation__link {
+    margin-left: 16px !important;
+}
+
+.mdl-layout__header {
+    -webkit-user-select: none;
+}
+
+.mdl-layout__drawer-button:hover {
+    background-color: #4E342E !important;
+}
+
+.mdl-layout__drawer-button:focus,
+.mdl-layout__drawer-button:hover:focus {
+    background-color: #3E2723 !important;
+}
+
+.mdl-layout__drawer-button:active, .mdl-layout__drawer-button:focus {
+    outline: none !important;
+}
+
+.mdl-layout__drawer-button {
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
