@@ -33,10 +33,6 @@
     margin-top: 24px;
 }
 
-.mdl-layout__drawer .mdl-navigation__link {
-    margin-left: 16px !important;
-}
-
 .mdl-layout__header {
     -webkit-user-select: none;
 }
@@ -60,5 +56,17 @@
 }
 
 .mdl-layout__drawer-navigation-subcategory {
-    margin-left: 32px;
+    margin-left: 16px;
+}
+
+.mdl-layout__drawer-navigation-subcategory {
+    margin-left: 40px;
+}
+
+.mdl-layout__drawer .mdl-layout__drawer-navigation-subcategory .mdl-navigation__link {
+    margin-left: -16px;
+}
+
+.mdl-navigation-current-topic {
+    font-weight: bold;
 }
