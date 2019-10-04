@@ -64,10 +64,7 @@
 }
 
 .mdl-layout__drawer-navigation-subcategory {
-    margin-left: 16px;
-}
-
-.mdl-layout__drawer-navigation-subcategory {
+    margin-top: 5px;
     margin-left: 40px;
 }
 
