@@ -33,4 +33,6 @@
 .content img {
     margin: 10px;
     max-width: 80%;
+    width: 80%;
+    height: auto;
 }
