@@ -16,22 +16,27 @@
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title">
-                <img class="navigation-logo mdl-layout__header-title-logo" src="img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
+                <img class="mini-logo mdl-layout__header-title-logo" src="img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
                 <span class="mdl-layout__header-title-text">Исторический зал</span>&nbsp;&nbsp;
-                <img class="navigation-logo mdl-layout__header-title-logo" src="img/coat_of_arms.png" alt="Герб Нижегородской Области">
             </span>
         </div>
     </header>
     <div class="mdl-layout__drawer">
         <div class="mdl-layout-drawer-title-area">
-            <img class="navigation-logo mdl-layout-drawer-title-logo" src="img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
+            <img class="mini-logo mdl-layout-drawer-title-logo" src="img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
             <span class="mdl-layout-title">Исторический зал</span>
         </div>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link mdl-navigation-current-topic">Главная</a>
             <span class="mdl-layout__drawer-navigation-subcategory">Стенды:
-                <a class="mdl-navigation__link" href="topics/architecture.html">Архитектурный Нижний</a>
-                <a class="mdl-navigation__link" href="topics/literature.html">Литературный Нижний</a>
+                <a class="mdl-navigation__link" href="topics/architectural.html">Архитектурный Нижний</a>
+                <a class="mdl-navigation__link" href="topics/literary.html">Литературный Нижний</a>
+                <a class="mdl-navigation__link" href="topics/theatrical.html">Театральный Нижний</a>
+                <a class="mdl-navigation__link" href="topics/industrial.html">Промышленный Нижний</a>
+                <a class="mdl-navigation__link" href="topics/victorious.html">Победный Нижний</a>
+                <a class="mdl-navigation__link" href="topics/musical.html">Музыкальный Нижний</a>
+                <a class="mdl-navigation__link" href="topics/orthodoxic.html">Православный Нижний</a>
+                <a class="mdl-navigation__link" href="topics/honorary_citizens.html">Почетные граждане</a>
             </span>
         </nav>
     </div>
@@ -41,32 +46,81 @@
             <h4>Выберите стенд:</h4>
             <div id="view_container">
                 <div class="view">
-                    <img alt="Архитектурный Нижний" src="img/architecture.jpg" />
-                    <div class="mask" style="background-color: rgba(132, 1, 28, 0.78)">
+                    <img alt="Архитектурный Нижний" src="img/cards/architecture.jpg" />
+                    <div class="mask" style="background-color: rgba(132,7,0,0.6)">
                         <h2>Архитектурный Нижний</h2>
                         <p>Интересная информация об архитектуре Нижнего Новгорода</p>
-                        <a href="topics/architecture.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
+                        <a href="topics/architectural.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
                     </div>
                 </div>
                 <div class="view">
-                    <img alt="Литературный Нижний" src="img/literature.jpg" />
+                    <img alt="Литературный Нижний" src="img/cards/literature.jpg" />
                     <div class="mask" style="background-color: rgba(129,132,63,0.78)">
                         <h2>Литературный Нижний</h2>
                         <p>Интересная информация о нижегородской литературе</p>
-                        <a href="topics/literature.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
+                        <a href="topics/literary.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
+                    </div>
+                </div>
+                <div class="view">
+                    <img alt="Театральный Нижний" src="img/cards/theatre.jpg" />
+                    <div class="mask" style="background-color: rgba(132,131,114,0.78)">
+                        <h2>Театральный Нижний</h2>
+                        <p>Интересная информация о нижегородских театрах</p>
+                        <a href="topics/theatrical.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
+                    </div>
+                </div>
+                <div class="view">
+                    <img alt="Промышленный Нижний" src="img/cards/industry.jpg" />
+                    <div class="mask" style="background-color: rgba(132,69,22,0.73)">
+                        <h2>Промышленный Нижний</h2>
+                        <p>Интересная информация о нижегородской промышленности</p>
+                        <a href="topics/industrial.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
+                    </div>
+                </div>
+                <div class="view">
+                    <img alt="Победный Нижний" src="img/cards/victory.jpg" />
+                    <div class="mask" style="background-color: rgba(25,132,74,0.73)">
+                        <h2>Победный Нижний</h2>
+                        <p>Вклад нижегородцев в победе в Великой Отечественной Войне</p>
+                        <a href="topics/victorious.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
+                    </div>
+                </div>
+                <div class="view">
+                    <img alt="Музыкальный Нижний" src="img/cards/music.jpg" />
+                    <div class="mask" style="background-color: rgba(111,115,132,0.73)">
+                        <h2>Музыкальный Нижний</h2>
+                        <p>Интересная информация о нижегородской музыке</p>
+                        <a href="topics/musical.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
+                    </div>
+                </div>
+                <div class="view">
+                    <img alt="Православный Нижний" src="img/cards/orthodoxy.jpg" />
+                    <div class="mask" style="background-color: rgba(132,115,46,0.73)">
+                        <h2>Православный Нижний</h2>
+                        <p>О православии в Нижнем Новгороде</p>
+                        <a href="topics/orthodoxic.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
+                    </div>
+                </div>
+                <div class="view">
+                    <img alt="Почетные граждане" src="img/cards/honorary_citizens.jpg" />
+                    <div class="mask" style="background-color: rgba(132,5,61,0.73)">
+                        <h2>Почетные граждане</h2>
+                        <p>Информация о почетных гражданах нашего города</p>
+                        <a href="topics/honorary_citizens.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect info">Перейти</a>
                     </div>
                 </div>
             </div>
-            <a href="video_audio.mp3">Пример аудиоряда</a>
         </div>
     </main>
     <br>
     <footer class="mdl-mini-footer">
         <div class="mdl-mini-footer__left-section">
-            <div class="mdl-logo">03 октября 2019 г.</div>
+            <img class="mdl-logo mini-logo" src="img/coat_of_arms.png" alt="Герб Нижегородской Области">
+            <div class="mdl-logo about">Исторический зал<br>"80 столетий Нижнего"</div>
         </div>
         <div class="mdl-mini-footer__right-section">
-            <div class="mdl-logo">Гимназия №2</div>
+            <div class="mdl-logo about gymnasium">МАОУ<br>"Гимназия №2"</div>
+            <img class="mdl-logo mini-logo" src="img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
         </div>
     </footer>
 </div>

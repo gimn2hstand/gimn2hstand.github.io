@@ -11,9 +11,17 @@
     vertical-align: -3px;
 }
 
-.navigation-logo {
+.mini-logo {
     width: 48px;
     height: 48px;
+}
+
+.about {
+    margin-top: 10px;
+}
+
+.about.gymnasium {
+    text-align: right;
 }
 
 .mdl-layout__header-title-logo {

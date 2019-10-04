@@ -113,3 +113,6 @@
 .view:hover a.info {
     transition-delay: 0.2s;
 }
+.view .mask h2 {
+    font-weight: bold;
+}
