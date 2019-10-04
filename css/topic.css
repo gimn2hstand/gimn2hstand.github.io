@@ -10,6 +10,11 @@
 .table_of_contents a {
     cursor: pointer;
     color: black;
+    text-decoration: underline;
+}
+
+.table_of_contents a:hover {
+    color: blue;
 }
 
 .table_of_contents a:visited {
