@@ -15,6 +15,10 @@ window.onload = function() {
         illustrations.forEach(function (illustration) {
             illustration.src = '../img/topic/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
             illustration.alt = chapter.dataset.chapter + ' - ' + (num++);
+            let label = illustration.dataset.label;
+            if(label) {
+                illustration.insertAdjacentHTML('afterend', '<br><span class="img-label">' + label + '</span><br><br>');
+            }
         })
     });
     tableOfContents.innerHTML = (tableOfContentsHTML += '</ul>');
