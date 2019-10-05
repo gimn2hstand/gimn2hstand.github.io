@@ -12,6 +12,7 @@ window.onload = function() {
         let illustrations = document.querySelectorAll('.content #' + chapter.id + " img");
         let num = 1;
         illustrations.forEach(function (illustration) {
+            illustration.src = '../img/topic/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
             illustration.alt = chapter.dataset.chapter + ' - ' + (num++);
         })
     });
