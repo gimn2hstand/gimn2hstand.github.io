@@ -12,6 +12,10 @@
     margin: 10px auto;
 }
 
+#table_of_contents * {
+    font-size: 15px;
+}
+
 #table_of_contents ul li a {
     cursor: pointer;
     color: darkblue;
@@ -44,6 +48,14 @@
     max-width: 80%;
     width: 80%;
     height: auto;
+}
+
+.chapter iframe {
+    max-width: 80%;
+    width: 550px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .chapter p {
