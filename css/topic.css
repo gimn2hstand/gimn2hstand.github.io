@@ -14,7 +14,7 @@
 
 #table_of_contents ul li a {
     cursor: pointer;
-    color: black;
+    color: darkblue;
     text-decoration: underline;
 }
 
@@ -28,16 +28,27 @@
 
 #table_of_contents ul li a:active {
     cursor: pointer;
-    color: darkblue;
+    color: mediumblue;
 }
 
 .content {
     text-align: center;
 }
 
-.content img {
+.content .chapter {
     margin: 10px;
+}
+
+.content img {
+    margin: 5px;
     max-width: 80%;
     width: 80%;
     height: auto;
+}
+
+.chapter p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px;
+    text-align: left;
 }

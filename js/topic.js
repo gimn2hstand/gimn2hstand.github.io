@@ -8,6 +8,7 @@ window.onload = function() {
     let tableOfContents = document.getElementById('table_of_contents');
     let tableOfContentsHTML = '<b>Содержание:</b><ul>';
     chapters.forEach(function (chapter) {
+        chapter.innerHTML = '<h4>' + chapter.dataset.chapter + '</h4>' + chapter.innerHTML;
         tableOfContentsHTML += '<li><a data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a></li>';
         let illustrations = document.querySelectorAll('.content #' + chapter.id + " img");
         let num = 1;
