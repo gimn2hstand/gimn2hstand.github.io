@@ -3,7 +3,7 @@
  * Copyright, Mikhail K., 2019
  */
 
-.table_of_contents {
+#table_of_contents {
     border: 2px darkgrey solid;
     background-color: lightgrey;
     text-align: left;
@@ -12,21 +12,21 @@
     margin: 10px auto;
 }
 
-.table_of_contents ul li a {
+#table_of_contents ul li a {
     cursor: pointer;
     color: black;
     text-decoration: underline;
 }
 
-.table_of_contents ul li a:hover {
+#table_of_contents ul li a:hover {
     color: blue;
 }
 
-.table_of_contents ul li a:visited {
+#table_of_contents ul li a:visited {
     color: black;
 }
 
-.table_of_contents ul li a:active {
+#table_of_contents ul li a:active {
     cursor: pointer;
     color: darkblue;
 }
