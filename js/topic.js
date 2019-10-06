@@ -6,9 +6,7 @@
 
 window.onload = function() {
     let chapters = document.querySelectorAll('.content .chapter');
-    let tableOfContents = document.getElementById('table_of_contents');
     let tableOfContentsHTML = '<b>Содержание:</b><ul>';
-    let tableOfContentsNavigation = document.getElementById('navigation-table_of_contents');
     let tableOfContentsNavigationHTML = 'Содержание:';
     chapters.forEach(function (chapter) {
         chapter.innerHTML = '<h4>' + chapter.dataset.chapter + '</h4>' + chapter.innerHTML;
@@ -25,9 +23,8 @@ window.onload = function() {
     document.querySelectorAll('.content .video-wrapper').forEach(function (video) {
         insertLabel(video);
     });
-    tableOfContents.innerHTML = (tableOfContentsHTML += '</ul>');
-    tableOfContentsNavigation.innerHTML = tableOfContentsNavigationHTML;
-
+    document.getElementById('table_of_contents').innerHTML = (tableOfContentsHTML += '</ul>');
+    document.getElementById('navigation-table_of_contents').innerHTML = tableOfContentsNavigationHTML;
     goClickListener(document.querySelectorAll('#table_of_contents ul li a'));
     goClickListener(document.querySelectorAll('#navigation-table_of_contents a'));
 };
