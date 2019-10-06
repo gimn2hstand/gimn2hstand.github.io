@@ -50,11 +50,15 @@
     height: auto;
 }
 
-.chapter p {
+#topic_content p {
     margin-left: 5%;
     margin-right: 5%;
     font-size: 16px;
     text-align: left;
+}
+
+.introduction {
+    text-align: center !important;
 }
 
 .img-label {
