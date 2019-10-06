@@ -45,6 +45,7 @@ function goClickListener(links) {
 }
 
 function goTo(section) {
+    closeNavigation();
     document.getElementById(section).scrollIntoView({behavior: 'smooth'});
     //location.href = '#' + section;
 }
