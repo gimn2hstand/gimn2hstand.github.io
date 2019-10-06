@@ -9,7 +9,7 @@ var topicLoaded = function() {
     let content = document.getElementById('topic_content');
     content.innerHTML = '<h3>' + topicName + '</h3>' + content.innerHTML;
     let tableOfContentsHTML = '<b>Содержание:</b><ul>';
-    let tableOfContentsNavigationHTML = 'Содержание:';
+    let tableOfContentsNavigationHTML = 'Содержание:<span id="nav_back-to-top"></span>';
     document.querySelectorAll('.content .chapter').forEach(function (chapter) {
         chapter.innerHTML = '<h4>' + chapter.dataset.chapter + '</h4>' + chapter.innerHTML;
         tableOfContentsHTML += '<li><a data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a></li>';
@@ -30,6 +30,7 @@ var topicLoaded = function() {
     goClickListener(document.querySelectorAll('#navigation-table_of_contents a'), function () {
         toggleNavigation();
     });
+    document.getElementById('nav_back-to-top').innerHTML = '<a class="mdl-navigation__link" onclick="goTop()">Начало страницы</a>'
 };
 
 function insertLabel(element) {
@@ -52,6 +53,10 @@ function goClickListener(links, independentFunction) {
             });
         }
     });
+}
+
+function goTop() {
+    goTo('topic_content');
 }
 
 function goTo(section) {
