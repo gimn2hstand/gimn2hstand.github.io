@@ -77,8 +77,11 @@
     margin-left: -16px;
 }
 
-.mdl-navigation-current-topic {
+.mdl-navigation__link {
     cursor: pointer;
+}
+
+.mdl-navigation-current-topic {
     font-weight: bold;
 }
 
