@@ -1,4 +1,5 @@
 /**
+ * Динамическое добавление глав в содержание и обработка иллюстрация
  * October 5, 2019
  * Copyright, Mikhail K., 2019
  */
@@ -18,11 +19,11 @@ window.onload = function() {
         illustrations.forEach(function (illustration) {
             illustration.src = '../img/topic/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
             illustration.alt = chapter.dataset.chapter + ' - ' + (num++);
-            let label = illustration.dataset.label;
-            if(label) {
-                illustration.insertAdjacentHTML('afterend', '<br><span class="img-label">' + label + '</span><br><br>');
-            }
-        })
+            insertLabel(illustration);
+        });
+    });
+    document.querySelectorAll('.content .video-wrapper').forEach(function (video) {
+        insertLabel(video);
     });
     tableOfContents.innerHTML = (tableOfContentsHTML += '</ul>');
     tableOfContentsNavigation.innerHTML = tableOfContentsNavigationHTML;
@@ -30,6 +31,13 @@ window.onload = function() {
     goClickListener(document.querySelectorAll('#table_of_contents ul li a'));
     goClickListener(document.querySelectorAll('#navigation-table_of_contents a'));
 };
+
+function insertLabel(element) {
+    let label = element.dataset.label;
+    if(label) {
+        element.insertAdjacentHTML('afterend', '<br><span class="img-label">' + label + '</span><br><br>');
+    }
+}
 
 function goClickListener(links) {
     links.forEach(function (link) {
