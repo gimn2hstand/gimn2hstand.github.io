@@ -38,6 +38,7 @@ function insertLabel(element) {
 function goClickListener(links) {
     links.forEach(function (link) {
         function goFunction() {
+            closeNavigation();
             goTo(link.dataset.section);
         }
         link.addEventListener('click', goFunction);
@@ -45,7 +46,6 @@ function goClickListener(links) {
 }
 
 function goTo(section) {
-    closeNavigation();
     document.getElementById(section).scrollIntoView({behavior: 'smooth'});
     //location.href = '#' + section;
 }
