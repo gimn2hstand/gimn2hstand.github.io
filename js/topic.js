@@ -28,7 +28,7 @@ var topicLoaded = function() {
     document.getElementById('navigation-table_of_contents').innerHTML = tableOfContentsNavigationHTML;
     goClickListener(document.querySelectorAll('#table_of_contents ul li a'));
     goClickListener(document.querySelectorAll('#navigation-table_of_contents a'), function () {
-        hideNavigation();
+        toggleNavigation();
     });
 };
 

@@ -1,12 +1,12 @@
 window.onload = function () {
     document.getElementById('drawer-icon').addEventListener('click', function () {
-        hideNavigation();
+        toggleNavigation();
     });
     if (typeof topicLoaded === 'function') {
         topicLoaded();
     }
 };
 
-function hideNavigation() {
+function toggleNavigation() {
     document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer();
 }
