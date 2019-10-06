@@ -54,6 +54,10 @@
     -webkit-user-select: none;
 }
 
+.mdl-layout__drawer {
+    -webkit-user-select: none;
+}
+
 .mdl-layout__drawer-button:hover {
     background-color: #6D4C41 !important;
 }
