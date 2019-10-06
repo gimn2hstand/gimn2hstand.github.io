@@ -5,7 +5,7 @@
  * Copyright, Mikhail K., 2019
  */
 
-window.onload = function() {
+var topicLoaded = function() {
     let tableOfContentsHTML = '<b>Содержание:</b><ul>';
     let tableOfContentsNavigationHTML = 'Содержание:';
     document.querySelectorAll('.content .chapter').forEach(function (chapter) {
@@ -25,7 +25,9 @@ window.onload = function() {
     document.getElementById('table_of_contents').innerHTML = (tableOfContentsHTML += '</ul>');
     document.getElementById('navigation-table_of_contents').innerHTML = tableOfContentsNavigationHTML;
     goClickListener(document.querySelectorAll('#table_of_contents ul li a'));
-    goClickListener(document.querySelectorAll('#navigation-table_of_contents a'));
+    goClickListener(document.querySelectorAll('#navigation-table_of_contents a'), function () {
+        hideNavigation();
+    });
 };
 
 function insertLabel(element) {
@@ -35,13 +37,18 @@ function insertLabel(element) {
     }
 }
 
-function goClickListener(links) {
+function goClickListener(links, independentFunction) {
     links.forEach(function (link) {
-        function goFunction() {
-            closeNavigation();
-            goTo(link.dataset.section);
+        if (typeof independentFunction === 'function') {
+            link.addEventListener('click', function () {
+                independentFunction();
+                goTo(link.dataset.section);
+            });
+        } else {
+            link.addEventListener('click', function () {
+                goTo(link.dataset.section);
+            });
         }
-        link.addEventListener('click', goFunction);
     });
 }
 
