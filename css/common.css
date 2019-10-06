@@ -3,6 +3,10 @@
  * Copyright, Mikhail K., 2019
  */
 
+.mdl-layout__header {
+    position: fixed;
+}
+
 .mdl-layout__drawer {
     width: 300px;
     left: -150px;
