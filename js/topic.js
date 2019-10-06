@@ -5,16 +5,14 @@
  */
 
 window.onload = function() {
-    let chapters = document.querySelectorAll('.content .chapter');
     let tableOfContentsHTML = '<b>Содержание:</b><ul>';
     let tableOfContentsNavigationHTML = 'Содержание:';
-    chapters.forEach(function (chapter) {
+    document.querySelectorAll('.content .chapter').forEach(function (chapter) {
         chapter.innerHTML = '<h4>' + chapter.dataset.chapter + '</h4>' + chapter.innerHTML;
         tableOfContentsHTML += '<li><a data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a></li>';
         tableOfContentsNavigationHTML += '<a class="mdl-navigation__link" data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a>';
-        let illustrations = document.querySelectorAll('.content #' + chapter.id + " img");
         let num = 1;
-        illustrations.forEach(function (illustration) {
+        document.querySelectorAll('.content #' + chapter.id + " img").forEach(function (illustration) {
             illustration.src = '../img/topic/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
             illustration.alt = chapter.dataset.chapter + ' - ' + (num++);
             insertLabel(illustration);
