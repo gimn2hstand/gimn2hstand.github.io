@@ -6,6 +6,8 @@
  */
 
 var topicLoaded = function() {
+    let content = document.getElementById('topic_content');
+    content.innerHTML = '<h3>' + topicName + '</h3>' + content.innerHTML;
     let tableOfContentsHTML = '<b>Содержание:</b><ul>';
     let tableOfContentsNavigationHTML = 'Содержание:';
     document.querySelectorAll('.content .chapter').forEach(function (chapter) {

@@ -7,6 +7,8 @@
     <script src="../design/mdl/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../css/common.css">
+    <script>var topicName='Почетные граждане';var topicId='honorary_citizens'</script>
+    <script src="../js/common.js"></script>
     <script src="../js/topic.js"></script>
     <link rel="stylesheet" href="../css/topic.css">
     <title>Почетные граждане - Исторический зал</title>
@@ -24,11 +26,12 @@
     </header>
     <div class="mdl-layout__drawer">
         <div class="mdl-layout-drawer-title-area">
-            <img class="mini-logo mdl-layout-drawer-title-logo" src="../img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
+            <img id="drawer-icon" class="mini-logo mdl-layout-drawer-title-logo" src="../img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
             <span class="mdl-layout-title">Исторический зал</span>
         </div>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="../index.html">Главная</a>
+            <span id="navigation-table_of_contents" class="mdl-layout__drawer-navigation-subcategory"></span>
             <span class="mdl-layout__drawer-navigation-subcategory">Стенды:
                 <a class="mdl-navigation__link" href="architectural.html">Архитектурный Нижний</a>
                 <a class="mdl-navigation__link" href="literary.html">Литературный Нижний</a>
@@ -43,43 +46,26 @@
     </div>
     <main class="mdl-layout__content">
         <div class="page-content">
-            <div class="content">
-                <h3>Почетные граждане</h3>
-                Нижний Новгород - город с почти тысячелетней историей, в том числе музыки.
-                <div class="table_of_contents">
-                    <b>Содержание:</b>
-                    <ul>
-                        <li><a onclick="goTo('kremlin')">Нижегородский Кремль</a></li>
-                        <li><a onclick="goTo('chkalov_stairs')">Чкаловская лестница</a></li>
-                    </ul>
-                </div>
-                <div id="kremlin">
-                    <h4>Нижегородский Кремль</h4>
-                    Нижегородскому Кремлю уже более 500 лет, и, возможно, это самая узнаваемая достопримечательность города.
-                    <br>
-                    <img src="../img/topic/architectural/kremlin/img1.jpg" alt="Нижегородский Кремль - 1" />
-                </div>
-                <div id="chkalov_stairs">
-                    <h4>Чкаловская лестница</h4>
-                    Чкаловская лестница это тоже очень узнаваемая достопримечательность.
-                    <br>
-                    <img src="../img/topic/architectural/chkalov_stairs/img1.jpg" alt="Чкаловская лестница - 1" />
-                    <img src="../img/topic/architectural/chkalov_stairs/img2.jpg" alt="Чкаловская лестница - 2" />
+            <br><br><br>
+            <div class="content" id="topic_content">
+                <p class="introduction">Введение</p>
+                <div id="table_of_contents"></div>
+                <div class="chapter" id="example" data-chapter="Пример главы">
+                    <p>Текст главы</p>
                 </div>
             </div>
         </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <img class="mdl-logo mini-logo" src="../img/coat_of_arms.png" alt="Герб Нижегородской области">
+                <div class="mdl-logo about">Исторический зал<br>"Восемь столетий Нижнего Новгорода"</div>
+            </div>
+            <div class="mdl-mini-footer__right-section">
+                <div class="mdl-logo about gymnasium">МАОУ<br>"Гимназия №2"</div>
+                <img class="mdl-logo mini-logo" src="../img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
+            </div>
+        </footer>
     </main>
-    <br>
-    <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-            <img class="mdl-logo mini-logo" src="../img/coat_of_arms.png" alt="Герб Нижегородской области">
-            <div class="mdl-logo about">Исторический зал<br>"Восемь столетий Нижнего Новгорода"</div>
-        </div>
-        <div class="mdl-mini-footer__right-section">
-            <div class="mdl-logo about gymnasium">МАОУ<br>"Гимназия №2"</div>
-            <img class="mdl-logo mini-logo" src="../img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
-        </div>
-    </footer>
 </div>
 
 </body>
