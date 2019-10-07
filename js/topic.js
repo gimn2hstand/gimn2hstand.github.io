@@ -18,7 +18,10 @@ var topicLoaded = function() {
         document.querySelectorAll('.content #' + chapter.id + " img").forEach(function (illustration) {
             illustration.src = '../img/topic/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
             illustration.alt = chapter.dataset.chapter + ' - ' + (num++);
-            insertLabel(illustration);
+            let label = insertLabel(illustration);
+            if(label) {
+                illustration.alt = label;
+            }
         });
     });
     document.querySelectorAll('.content .video-wrapper').forEach(function (video) {
@@ -37,7 +40,9 @@ function insertLabel(element) {
     let label = element.dataset.label;
     if(label) {
         element.insertAdjacentHTML('afterend', '<br><span class="img-label">' + label + '</span><br><br>');
+        return label;
     }
+    return null;
 }
 
 function goClickListener(links, independentFunction) {
