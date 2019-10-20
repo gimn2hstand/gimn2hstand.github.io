@@ -23,6 +23,7 @@
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
+    -webkit-user-select: none;
 }
 
 .view .mask,
@@ -61,10 +62,6 @@
 
 .view a.info {
     display: inline-block;
-}
-
-.view a.info:hover {
-    box-shadow: 0 0 5px #000
 }
 
 .view img {
