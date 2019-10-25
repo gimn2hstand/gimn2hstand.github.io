@@ -9,7 +9,7 @@ var topicLoaded = function() {
     let content = document.getElementById('topic_content');
     content.innerHTML = '<h3>' + topicName + '</h3>' + content.innerHTML;
     let tableOfContentsHTML = '<b>Содержание:</b><ul>';
-    let tableOfContentsNavigationHTML = 'Содержание:<span id="nav_back-to-top"></span>';
+    let tableOfContentsNavigationHTML = '<a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Содержание:</a><a class="mdl-navigation__link" onclick="goTop()">Начало страницы</a>';
     document.querySelectorAll('.content .chapter').forEach(function (chapter) {
         chapter.innerHTML = '<h4>' + chapter.dataset.chapter + '</h4>' + chapter.innerHTML;
         tableOfContentsHTML += '<li><a data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a></li>';
@@ -29,7 +29,6 @@ var topicLoaded = function() {
     });
     document.getElementById('table_of_contents').innerHTML = (tableOfContentsHTML += '</ul>');
     document.getElementById('navigation-table_of_contents').innerHTML = tableOfContentsNavigationHTML;
-    document.getElementById('nav_back-to-top').innerHTML = '<a class="mdl-navigation__link" onclick="goTop()">Начало страницы</a>'
     goClickListener(document.querySelectorAll('#table_of_contents ul li a'));
     goClickListener(document.querySelectorAll('#navigation-table_of_contents a'), function () {
         toggleNavigation();
