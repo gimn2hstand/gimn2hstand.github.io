@@ -2,6 +2,9 @@
  * October 3, 2019
  * Copyright, Mikhail K., 2019
  */
+.mdl-layout__drawer.is-visible~.mdl-layout__content.mdl-layout__content {
+    overflow-y: unset !important;
+}
 
 .mdl-layout__header {
     position: fixed;
