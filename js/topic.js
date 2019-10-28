@@ -16,7 +16,7 @@ var topicLoaded = function() {
         tableOfContentsNavigationHTML += '<a class="mdl-navigation__link" data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a>';
         let num = 1;
         document.querySelectorAll('.content #' + chapter.id + " img").forEach(function (illustration) {
-            illustration.src = '../img/topic/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
+            illustration.src = '../img/topic/' + topicCategory + '/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
             illustration.alt = chapter.dataset.chapter + ' - ' + (num++);
             let label = insertLabel(illustration);
             if(label) {
