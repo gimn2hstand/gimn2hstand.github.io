@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../design/mdl/material.min.css">
+    <script src="../design/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/common.css">
+    <script>var topicName='XIV век';var topicCategory='century';var topicId='xiv'</script>
+    <script src="../js/common.js"></script>
+    <script src="../js/topic.js"></script>
+    <link rel="stylesheet" href="../css/topic.css">
+    <title>XIV век - Исторический зал</title>
 </head>
 <body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">
+                <img class="mini-logo mdl-layout__header-title-logo" src="../img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
+                <span class="mdl-layout__header-title-text">Исторический зал</span>&nbsp;&nbsp;
+            </span>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <div class="mdl-layout-drawer-title-area">
+            <img id="drawer-icon" class="mini-logo mdl-layout-drawer-title-logo" src="../img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
+            <span class="mdl-layout-title">Исторический зал</span>
+        </div>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="../index.html">Главная</a>
+            <span id="navigation-table_of_contents"></span>
+
+            <a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Столетия:</a>
+            <a class="mdl-navigation__link" href="../centuries/xiii.html">XIII век</a>
+            <a class="mdl-navigation__link mdl-navigation-current-topic">XIV век</a>
+            <a class="mdl-navigation__link" href="../centuries/xv.html">XV век</a>
+            <a class="mdl-navigation__link" href="../centuries/xvi.html">XVI век</a>
+            <a class="mdl-navigation__link" href="../centuries/xvii.html">XVII век</a>
+            <a class="mdl-navigation__link" href="../centuries/xviii.html">XVIII век</a>
+            <a class="mdl-navigation__link" href="../centuries/xix.html">XIX век</a>
+            <a class="mdl-navigation__link" href="../centuries/xx.html">XX век</a>
+
+            <a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Стенды:</a>
+            <a class="mdl-navigation__link" href="../stands/architectural.html">Архитектурный Нижний</a>
+            <a class="mdl-navigation__link" href="../stands/literary.html">Литературный Нижний</a>
+            <a class="mdl-navigation__link" href="../stands/theatrical.html">Театральный Нижний</a>
+            <a class="mdl-navigation__link" href="../stands/industrial.html">Промышленный Нижний</a>
+            <a class="mdl-navigation__link" href="../stands/victorious.html">Победный Нижний</a>
+            <a class="mdl-navigation__link" href="../stands/musical.html">Музыкальный Нижний</a>
+            <a class="mdl-navigation__link" href="../stands/orthodoxic.html">Православный Нижний</a>
+            <a class="mdl-navigation__link" href="../stands/honorary_citizens.html">Почетные граждане</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <br><br><br>
+            <div class="content" id="topic_content">
+                <p class="introduction">Введение</p>
+                <div id="table_of_contents"></div>
+                <div class="chapter" id="example" data-chapter="Пример главы">
+                    <p>Текст главы</p>
+                </div>
+            </div>
+        </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <img class="mdl-logo mini-logo" src="../img/coat_of_arms.png" alt="Герб Нижегородской области">
+                <div class="mdl-logo about">Исторический зал<br>"Восемь столетий Нижнего Новгорода"</div>
+            </div>
+            <div class="mdl-mini-footer__right-section">
+                <div class="mdl-logo about gymnasium">МАОУ<br>"Гимназия №2"</div>
+                <img class="mdl-logo mini-logo" src="../img/gymnasium_logo.png" alt="Эмблема Гимназии №2">
+            </div>
+        </footer>
+    </main>
+</div>
 
 </body>
 </html>
