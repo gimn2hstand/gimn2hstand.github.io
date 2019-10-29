@@ -3,12 +3,27 @@
  * Copyright, Mikhail K., 2019
  */
 
+#table_of_contents, #century-navigation {
+    border: 2px lightgrey solid;
+    background-color: ghostwhite;
+}
+
+#century-navigation {
+    max-width: 50%;
+    max-height: 15vh;
+    padding: 10px;
+    margin: 10px auto;
+    -webkit-user-select: none;
+}
+
+#century-navigation a {
+    max-width: 50%;
+}
+
 #table_of_contents {
-    border: 2px darkgrey solid;
-    background-color: lightgrey;
+    width: 75%;
     text-align: left;
     padding: 10px;
-    width: 75%;
     margin: 10px auto;
 }
 
@@ -18,21 +33,24 @@
 
 #table_of_contents ul li a {
     cursor: pointer;
-    color: darkblue;
     text-decoration: underline;
 }
 
-#table_of_contents ul li a:hover {
+#table_of_contents ul li a, #century-navigation a {
     color: blue;
 }
 
-#table_of_contents ul li a:visited {
-    color: black;
+#table_of_contents ul li a:hover, #century-navigation a:hover {
+    color: mediumblue;
 }
 
-#table_of_contents ul li a:active {
+#table_of_contents ul li a:visited, #century-navigation a:visited {
+    color: darkblue;
+}
+
+#table_of_contents ul li a:active, #century-navigation a:active {
     cursor: pointer;
-    color: mediumblue;
+    color: darkblue;
 }
 
 .content {

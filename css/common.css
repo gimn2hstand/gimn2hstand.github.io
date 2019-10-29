@@ -54,11 +54,7 @@
     margin-top: 24px;
 }
 
-.mdl-layout__header {
-    -webkit-user-select: none;
-}
-
-.mdl-layout__drawer {
+.mdl-layout__header, .mdl-layout__drawer {
     -webkit-user-select: none;
 }
 
