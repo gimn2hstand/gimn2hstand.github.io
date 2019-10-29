@@ -107,3 +107,19 @@
 .mdl-mini-footer .mdl-logo {
     line-height: initial !important;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b7b7b7;
+}
