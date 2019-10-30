@@ -75,7 +75,7 @@
     text-align: left;
 }
 
-#topic_content p {
+#topic_content p, li {
     font-size: 16px;
 }
 
