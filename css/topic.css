@@ -69,11 +69,14 @@
     height: auto;
 }
 
-#topic_content p {
+#topic_content ul, li, #topic_content > p {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 16px;
     text-align: left;
+}
+
+#topic_content p {
+    font-size: 16px;
 }
 
 .introduction {
