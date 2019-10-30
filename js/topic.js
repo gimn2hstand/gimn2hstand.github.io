@@ -7,7 +7,7 @@
 
 var topicLoaded = function() {
     let content = document.getElementById('topic_content');
-    content.innerHTML = '<h3>' + topicName + '</h3>' + content.innerHTML;
+    content.innerHTML = '<h3 id="topic_title">' + topicName + '</h3>' + content.innerHTML;
     let tableOfContentsHTML = '<b>Содержание:</b><ul>';
     let tableOfContentsNavigationHTML = '<a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Содержание:</a><a class="mdl-navigation__link" onclick="goTop()">Начало страницы</a>';
     document.querySelectorAll('.content .chapter').forEach(function (chapter) {
@@ -60,10 +60,14 @@ function goClickListener(links, independentFunction) {
 }
 
 function goTop() {
-    goTo('topic_content');
+    goToElement(document.getElementById('topic_content').parentElement);
 }
 
 function goTo(section) {
-    document.getElementById(section).scrollIntoView({behavior: 'smooth'});
-    //location.href = '#' + section;
+    goToElement(document.getElementById(section));
+}
+
+function goToElement(element) {
+    element.scrollIntoView({behavior: 'smooth'});
+    //location.href = '#' + element.id;
 }
