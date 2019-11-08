@@ -4,19 +4,19 @@
  */
 
 var topicLoaded = function() {
-    let content = document.getElementById('topic_content');
+    var content = document.getElementById('topic_content');
     content.innerHTML = '<h3 id="topic_title">' + topicName + '</h3>' + content.innerHTML;
-    let tableOfContentsHTML = '<b>Содержание:</b><ul>';
-    let tableOfContentsNavigationHTML = '<a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Содержание:</a><a class="mdl-navigation__link" onclick="goTop()">Начало страницы</a>';
+    var tableOfContentsHTML = '<b>Содержание:</b><ul>';
+    var tableOfContentsNavigationHTML = '<a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Содержание:</a><a class="mdl-navigation__link" onclick="goTop()">Начало страницы</a>';
     document.querySelectorAll('.content .chapter').forEach(function (chapter) {
         chapter.innerHTML = '<h4>' + chapter.dataset.chapter + '</h4>' + chapter.innerHTML;
         tableOfContentsHTML += '<li><a data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a></li>';
         tableOfContentsNavigationHTML += '<a class="mdl-navigation__link" data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a>';
-        let num = 1;
+        var num = 1;
         document.querySelectorAll('.content #' + chapter.id + " img").forEach(function (illustration) {
             illustration.src = '../img/topic/' + topicCategory + '/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
             illustration.alt = chapter.dataset.chapter + ' - ' + (num++);
-            let label = insertLabel(illustration);
+            var label = insertLabel(illustration);
             if(label) {
                 illustration.alt = label;
             }
@@ -34,7 +34,7 @@ var topicLoaded = function() {
 };
 
 function insertLabel(element) {
-    let label = element.dataset.label;
+    var label = element.dataset.label;
     if(label) {
         element.insertAdjacentHTML('afterend', '<br><span class="img-label">' + label + '</span><br><br>');
         return label;
