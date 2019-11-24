@@ -36,7 +36,6 @@
 }
 
 #table_of_contents ul li a:hover {
-    cursor: pointer;
     text-decoration: underline;
 }
 
@@ -53,7 +52,6 @@
 }
 
 #table_of_contents ul li a:active, #century-navigation a:active {
-    cursor: pointer;
     color: darkblue;
 }
 
