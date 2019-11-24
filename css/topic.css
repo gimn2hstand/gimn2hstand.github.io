@@ -5,6 +5,7 @@
 #table_of_contents, #century-navigation {
     border: 2px lightgrey solid;
     background-color: ghostwhite;
+    box-shadow: 5px 4px 5px rgba(0,0,0,0.5);
 }
 
 #century-navigation {

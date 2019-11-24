@@ -7,11 +7,11 @@ var topicLoaded = function() {
     var content = document.getElementById('topic_content');
     content.innerHTML = '<h3 id="topic_title">' + topicName + '</h3>' + content.innerHTML;
     var tableOfContentsHTML = '<b>Содержание:</b><ul>';
-    var tableOfContentsNavigationHTML = '<a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Содержание:</a><a class="mdl-navigation__link" onclick="goTop()">Начало страницы</a>';
+    var tableOfContentsNavigationHTML = '<a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Содержание:</a><a class="mdl-navigation__link" onclick="goTop()"><i class="material-icons">arrow_upward</i>Начало страницы</a>';
     document.querySelectorAll('.content .chapter').forEach(function (chapter) {
         chapter.innerHTML = '<h4>' + chapter.dataset.chapter + '</h4>' + chapter.innerHTML;
         tableOfContentsHTML += '<li><a data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a></li>';
-        tableOfContentsNavigationHTML += '<a class="mdl-navigation__link" data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a>';
+        tableOfContentsNavigationHTML += '<a class="mdl-navigation__link" data-section="' + chapter.id + '"><i class="material-icons">subdirectory_arrow_right</i>' + chapter.dataset.chapter + '</a>';
         var num = 1;
         document.querySelectorAll('.content #' + chapter.id + " img").forEach(function (illustration) {
             illustration.src = '../img/topic/' + topicCategory + '/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';

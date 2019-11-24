@@ -3,7 +3,15 @@
  * Copyright, Mikhail K., 2019
  */
 .mdl-navigation {
-    margin-top: 5px;
+    padding-top: unset !important;
+    margin-top: -15px;
+}
+
+.mdl-navigation__link .material-icons {
+    vertical-align: bottom;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 1px;
 }
 
 .mdl-layout__drawer.is-visible~.mdl-layout__content.mdl-layout__content {
@@ -51,15 +59,19 @@
 .mdl-layout-drawer-title-logo {
     float: left;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 2px;
-    margin-left: 8px;
+    margin-left: 14px;
     cursor: pointer;
 }
 
-.mdl-layout-drawer-title-area .mdl-layout-title {
-    margin-left: 64px;
-    margin-top: 24px;
+.mdl-layout-drawer-title-area .mdl-layout-title, .mdl-layout-subtitle {
+    margin-left: 18px;
+    margin-top: 76px;
+}
+
+.mdl-layout-drawer-title-area .mdl-layout-subtitle {
+    color: gray;
 }
 
 .mdl-layout__header, .mdl-layout__drawer {
@@ -97,7 +109,7 @@
 }
 
 .mdl-layout__drawer .mdl-layout__drawer-navigation-subcategory .mdl-navigation__link {
-    margin-left: -16px;
+    //margin-left: -16px;
 }
 
 .mdl-navigation__link {
@@ -106,6 +118,7 @@
 
 .mdl-navigation-current-topic {
     font-weight: bold;
+    background-color: #cfcece;
 }
 
 .mdl-mini-footer .mdl-logo {
