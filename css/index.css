@@ -14,8 +14,7 @@
 .view {
     width: auto;
     margin: 0;
-    display: inline-block;=
-    float: left;
+    display: inline-block;
     border: 10px solid #fff;
     overflow: hidden;
     position: relative;
