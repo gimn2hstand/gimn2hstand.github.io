@@ -33,6 +33,7 @@
 
 #table_of_contents ul li a, .piece a {
     cursor: pointer;
+    text-decoration: unset;
 }
 
 #table_of_contents ul li a:hover, .piece a:hover {
