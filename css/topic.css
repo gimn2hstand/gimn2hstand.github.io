@@ -31,27 +31,24 @@
     font-size: 15px;
 }
 
-#table_of_contents ul li, .piece a {
+#table_of_contents ul li a, .piece a {
     cursor: pointer;
 }
 
-#table_of_contents ul li, .piece a:hover {
+#table_of_contents ul li a:hover, .piece a:hover {
     text-decoration: underline;
-}
-
-#table_of_contents ul li a, #century-navigation, .piece a {
-    color: blue;
-}
-
-#table_of_contents ul li, .piece a:hover {
     color: mediumblue;
 }
 
-#table_of_contents ul li a:visited, #century-navigation, .piece a:visited {
+#table_of_contents ul li a, #century-navigation a, .piece a {
+    color: blue;
+}
+
+#table_of_contents ul li a:visited, #century-navigation:visited, .piece a:visited {
     color: darkblue;
 }
 
-#table_of_contents ul li a:active, #century-navigation, .piece a:active {
+#table_of_contents ul li a:active, #century-navigation:active, .piece a:active {
     color: darkblue;
 }
 
