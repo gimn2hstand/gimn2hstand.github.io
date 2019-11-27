@@ -2,6 +2,15 @@
  * October 3, 2019
  * Copyright, Mikhail K., 2019
  */
+.mdl-layout__obfuscator.is-visible {
+    backdrop-filter: saturate(105%) blur(5px);
+}
+
+.mdl-layout__header.is-casting-shadow {
+    background-color: rgba(121, 85, 72, 0.85);
+    backdrop-filter: saturate(110%) blur(15px);
+}
+
 .mdl-navigation {
     padding-top: unset !important;
     margin-top: -12px;
