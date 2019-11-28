@@ -94,13 +94,17 @@
     -webkit-user-select: none;
 }
 
+.mdl-layout__drawer-button {
+    background-color: unset !important;
+}
+
 .mdl-layout__drawer-button:hover {
-    background-color: #6D4C41 !important;
+    background-color: rgba(109, 76, 65, 0.75) !important;
 }
 
 .mdl-layout__drawer-button:focus,
 .mdl-layout__drawer-button:hover:focus {
-    background-color: #5D4037 !important;
+    background-color: rgba(93, 64, 55, 0.75) !important;
 }
 
 .mdl-layout__drawer-button:active, .mdl-layout__drawer-button:focus {
