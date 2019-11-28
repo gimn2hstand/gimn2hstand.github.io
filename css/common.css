@@ -114,10 +114,6 @@
     background-color: unset !important;
 }
 
-.mdl-layout__drawer .mdl-layout__drawer-navigation-subcategory .mdl-navigation__link {
-    //margin-left: -16px;
-}
-
 .mdl-navigation__link {
     cursor: pointer;
 }
