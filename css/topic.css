@@ -65,7 +65,7 @@
     background-color: whitesmoke;
 }
 
-.piece > p {
+.piece > .poems {
     font-family: "Times New Roman", Times, serif;
     font-size: 20px !important;
     font-style: oblique;
