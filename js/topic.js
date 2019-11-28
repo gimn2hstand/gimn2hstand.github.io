@@ -67,5 +67,4 @@ function goTo(section) {
 
 function goToElement(element) {
     element.scrollIntoView({behavior: 'smooth'});
-    //location.href = '#' + element.id;
 }
