@@ -26,9 +26,9 @@ var topicLoaded = function() {
         insertLabel(video);
     });
     document.getElementById('table_of_contents').innerHTML = (tableOfContentsHTML += '</ul>');
-    document.getElementById('navigation-table_of_contents:not(.mdl-layout__drawer-navigation-subcategory)').innerHTML = tableOfContentsNavigationHTML;
+    document.getElementById('navigation-table_of_contents').innerHTML = tableOfContentsNavigationHTML;
     goClickListener(document.querySelectorAll('#table_of_contents ul li a'));
-    goClickListener(document.querySelectorAll('#navigation-table_of_contents a'), function () {
+    goClickListener(document.querySelectorAll('#navigation-table_of_contents a:not(.mdl-layout__drawer-navigation-subcategory)'), function () {
         toggleNavigation();
     });
 };
