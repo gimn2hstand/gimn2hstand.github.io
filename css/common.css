@@ -133,12 +133,27 @@
     //margin-left: -16px;
 }
 
+.mdl-navigation {
+    transition: all 1s ease-out;
+}
+
 .mdl-navigation__link {
     cursor: pointer;
 }
 
+.mdl-navigation__link:hover {
+    cursor: pointer;
+    background-color: rgba(224, 224, 224, 0.75) !important;
+}
+
+.mdl-navigation__link:focus,
+.mdl-navigation__link:focus:hover,
+.mdl-navigation__link:focus:active {
+    background-color: rgba(200, 200, 200, 0.75);
+}
+
 .mdl-navigation-current-topic {
-    background-color: #cfcece;
+    background-color: rgba(206, 206, 206, 0.75);
 }
 
 .mdl-mini-footer .mdl-logo {
