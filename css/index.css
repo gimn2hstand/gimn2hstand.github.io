@@ -94,7 +94,6 @@
 @media only screen and (max-width: 992px) {
     .view .mask {
         opacity: 1 !important;
-        backdrop-filter: blur(1px);
     }
 
     .view h2, .view p, .view a.info {
@@ -109,7 +108,6 @@
 
 .view:hover .mask {
     opacity: 1;
-    backdrop-filter: blur(1px);
 }
 
 .view:hover h2,
