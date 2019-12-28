@@ -22,7 +22,7 @@ var topicLoaded = function() {
             }
         });
     });
-    document.querySelectorAll('.content .video-wrapper, .piece').forEach(function (video) {
+    document.querySelectorAll('.content .injection, .piece').forEach(function (video) {
         insertLabel(video);
     });
     document.getElementById('table_of_contents').innerHTML = (tableOfContentsHTML += '</ul>');

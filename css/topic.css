@@ -81,7 +81,7 @@
 }
 
 .content img {
-    margin: 5px;
+    margin: 5px 5px 10px;
     max-width: 90%;
     width: 90%;
     height: auto;
@@ -108,7 +108,7 @@
     margin-bottom: 5px;
 }
 
-.video-wrapper {
+.injection {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
@@ -118,7 +118,7 @@
     margin-right: 6%;
 }
 
-.video-wrapper iframe {
+.injection iframe {
     position: absolute;
     top: 0;
     left: 0;
