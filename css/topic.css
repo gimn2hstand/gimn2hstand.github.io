@@ -63,9 +63,9 @@
 }
 
 .poem-piece {
-    padding: 20px 10px 10px;
+    padding-top: 20px;
     height: auto;
-    max-height: 300px;
+    max-height: 330px;
 }
 
 .poem-piece > .poems {
