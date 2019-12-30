@@ -146,10 +146,7 @@
     cursor: pointer;
 }
 
-.spoiler-header-inactive:before {
-    content: '⯈ ';
-}
-
-.spoiler-header-active:before {
-    content: '⯆ ';
+.spoiler-header > * {
+    vertical-align: middle;
+    -webkit-user-select: none;
 }
