@@ -91,9 +91,12 @@
 }
 
 .chapter li, #topic_content > p, .chapter > p {
+    text-align: left;
+}
+
+.chapter li, #topic_content > p, .chapter > p, .content img {
     margin-left: 5%;
     margin-right: 5%;
-    text-align: left;
 }
 
 #topic_content p, li {
