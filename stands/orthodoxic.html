@@ -10,6 +10,7 @@
     <script>var topicName='Православный Нижний';var topicCategory='stand';var topicId='orthodoxic'</script>
     <script src="../js/common.js"></script>
     <script src="../js/topic.js"></script>
+    <script src="../js/spoiler.js"></script>
     <link rel="stylesheet" href="../css/topic.min.css">
     <title>Православный Нижний - Исторический зал</title>
 </head>
@@ -63,8 +64,14 @@
                 <p class="introduction">Более 1000 лет назад, в 988 году князь Владимир провел Крещение Руси, а Нижний Новгород был основан позже более чем на 200 лет. Таким образом, история православия в Нижнем Новгороде берет начало с момента его основания.</p>
                 <div id="table_of_contents"></div>
                 <div class="chapter" id="early" data-chapter="Раннее время">
-                    <p>Решив основать Нижний Новгород, Юрий Всеволодович поручил возвести крепость. В первые годы ее существования были построены два белокаменных храма, в том числе Архангельский собор.</p>
-                    <img data-label="Михайлово-Архангельский собор"/>
+                    <p>Решив основать Нижний Новгород, Юрий Всеволодович поручил возвести крепость. В первые годы ее существования были построены два белокаменных храма, в том числе Архангельский собор, так же называемый Михайло-Архангельским, или Собором Архангела Михаила.</p>
+                    <img data-label="Собор Архангела Михаила"/>
+                    <div class="spoiler piece" data-for="introduction_arkhangel_church_map">
+                        <div class="spoiler-header spoiler-header-inactive" data-name="Собор Архангела Михаила на карте"></div>
+                        <div class="injection" id="introduction_arkhangel_church_map">
+                            <iframe class="iframe-injection" data-from="https://yandex.ru/map-widget/v1/-/CGxYyC7p"></iframe>
+                        </div>
+                    </div>
                 </div>
                 <div class="chapter" id="church_schism" data-chapter="Раскол">
                     <p>Уроженец Нижнего Новгорода, патриарх Никон на Московском соборе 1654 года принимает решение провести церковную реформу, заключающуюся во внесении изменений в богослужебные книги московской печати и некоторые обряды в целях их унификации с современными греческими.</p>
@@ -76,14 +83,27 @@
                     <img data-label="Церковь Собора Пресвятой Богородицы"/>
                     <p>Ее возведение началось в 1696 году, а завершено к 1701 году, однако произошел пожар. Восстанавливалась церковь уже не Строгановым, а его женой - Марией Яковлевной.</p>
                     <p>В 1722 году Петр I приказал закрыть церковь из-за икон, написанных придворным мастером Караваком для столичного Петропавловского собора.</p>
-                    <p>Вновь открыт храм был только после смерти Петра I, в 1727 году. В 1870-1880 годах церковь отреставрировали.</p>
                     <img data-label="Фотография 1870 года"/>
+                    <p>Вновь открыт храм был только после смерти Петра I, в 1727 году. В 1870-1880 годах церковь отреставрировали.</p>
+                    <div class="spoiler piece" data-for="stroganov_church_map">
+                        <div class="spoiler-header spoiler-header-inactive" data-name="Церковь Собора Пресвятой Богородицы на карте"></div>
+                        <div class="injection" id="stroganov_church_map">
+                            <iframe class="iframe-injection" data-from="https://yandex.ru/map-widget/v1/-/CGxY5EKL"></iframe>
+                        </div>
+                    </div>
                 </div>
                 <div class="chapter" id="radonezsh_church" data-chapter="Церковь Сергия Радонежского">
                     <p>Храм преподобного Сергия Радонежского начал строиться в 1865 году после личного утверждения проекта императором Александром II. Строительство было завершено к 1869 году.</p>
                     <img data-label="Церковь Сергия Радонежского"/>
                     <p>В годы советской власти в храме располагался Союз художников, а в 2003 году церковь была передана Нижегородской епархии.</p>
                     <p>Признана объектом кульурного наследия.</p>
+                    <p>Вновь открыт храм был только после смерти Петра I, в 1727 году. В 1870-1880 годах церковь отреставрировали.</p>
+                    <div class="spoiler piece" data-for="radonezsh_church_map">
+                        <div class="spoiler-header spoiler-header-inactive" data-name="Церковь Сергия Радонежского на карте"></div>
+                        <div class="injection" id="radonezsh_church_map">
+                            <iframe class="iframe-injection" data-from="https://yandex.ru/map-widget/v1/-/CGxY5Uzs"></iframe>
+                        </div>
+                    </div>
                 </div>
                 <div class="chapter" id="nevsky_cathedral" data-chapter="Собор Александра Невского">
                     <p>Собор святого благоверного князя Александра Невского (Новоярморочный собор) – собор на стрелке Волги и Оки, относящейся к историческому центру Нижнего Новгорода, построенный в 1868—1881 годах.</p>
@@ -93,6 +113,12 @@
                     <p>В 1929 году храм был закрыт, а через год все иконостасы и деревянные украшения пустили на дрова для обогрева местных домов. Прихожаном удалось спасти лишь несколько икон, в том числе икону Божией Матери и Животворящий Крест. В конце 1920-х годов планировался снос собора и возведение на его места памятника Владимиру Ленину, но этот проект был отменен.</p>
                     <img data-label="Наши дни"/>
                     <p>В 1983 году началась реставрация собора, в 1989 году началось восстановление шатров храма. Собор был передан под управление РПЦ в 1992 году.</p>
+                    <div class="spoiler piece" data-for="nevsky_cathedral_map">
+                        <div class="spoiler-header spoiler-header-inactive" data-name="Церковь Сергия Радонежского на карте"></div>
+                        <div class="injection" id="nevsky_cathedral_map">
+                            <iframe class="iframe-injection" data-from="https://yandex.ru/map-widget/v1/-/CGxY5F~P"></iframe>
+                        </div>
+                    </div>
                 </div>
                 <br>
             </div>
