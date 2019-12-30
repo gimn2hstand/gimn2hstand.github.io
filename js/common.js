@@ -5,6 +5,9 @@ window.onload = function () {
     if (typeof topicLoaded === 'function') {
         topicLoaded();
     }
+    if (typeof initSpoilers === 'function') {
+        initSpoilers();
+    }
 };
 
 function toggleNavigation() {
