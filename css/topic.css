@@ -142,6 +142,10 @@
     height: 100%;
 }
 
+.spoiler {
+    transition: max-height 0.5s ease-in-out;
+}
+
 .spoiler-header {
     text-align: left;
     padding: 10px;

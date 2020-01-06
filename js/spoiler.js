@@ -3,6 +3,7 @@ function initSpoilers() {
         var spoiled = document.getElementById(header.parentElement.dataset.for);
         spoiled.style.display = 'none';
         header.innerHTML = '<i class="material-icons">arrow_right</i><span>' + header.dataset.name + '</span>';
+        header.parentElement.style.maxHeight = header.clientHeight + 'px';
         header.addEventListener('click', function () {
             if (header.classList.contains('spoiler-header-inactive')) {
                 spoiled.style.display = null;
@@ -16,7 +17,9 @@ function initSpoilers() {
                         iframe.src = iframe.dataset.from;
                     }
                 }
+                header.parentElement.style.maxHeight = (header.clientHeight + spoiled.clientHeight + 15) + 'px';
             } else {
+                header.parentElement.style.maxHeight = header.clientHeight + 'px';
                 spoiled.style.display = 'none';
                 header.classList.remove('spoiler-header-active');
                 header.classList.add('spoiler-header-inactive');
