@@ -1,27 +1,31 @@
 function initSpoilers() {
-    document.querySelectorAll('.spoiler-header').forEach(function (header) {
-        var spoiled = document.getElementById(header.parentElement.dataset.for);
-        spoiled.style.display = 'none';
-        header.innerHTML = '<i class="material-icons">arrow_right</i><span>' + header.dataset.name + '</span>';
-        header.addEventListener('click', function () {
-            if (header.classList.contains('spoiler-header-inactive')) {
-                spoiled.style.display = null;
-                header.classList.remove('spoiler-header-inactive');
-                header.classList.add('spoiler-header-active');
-                header.innerHTML = '<i class="material-icons">arrow_drop_down</i><span>' + header.dataset.name + '</span>';
-                var iframes = spoiled.getElementsByClassName('iframe-injection');
-                for(var i = 0; i < iframes.length; i++) {
-                    var iframe = iframes[i];
-                    if(iframe.src !== iframe.dataset.from) {
-                        iframe.src = iframe.dataset.from;
+    var headers = document.querySelectorAll('.spoiler-header');
+    for (var i = 0, len = headers.length; i < len; i++) {
+        (function () {
+            var header = headers[i];
+            var spoiled = document.getElementById(header.parentElement.dataset.for);
+            spoiled.style.display = 'none';
+            header.innerHTML = '<i class="material-icons">arrow_right</i><span>' + header.dataset.name + '</span>';
+            header.addEventListener('click', function () {
+                if (header.classList.contains('spoiler-header-inactive')) {
+                    spoiled.style.display = '';
+                    header.classList.remove('spoiler-header-inactive');
+                    header.classList.add('spoiler-header-active');
+                    header.innerHTML = '<i class="material-icons">arrow_drop_down</i><span>' + header.dataset.name + '</span>';
+                    var iframes = spoiled.getElementsByClassName('iframe-injection');
+                    for(var i = 0; i < iframes.length; i++) {
+                        var iframe = iframes[i];
+                        if(iframe.src !== iframe.dataset.from) {
+                            iframe.src = iframe.dataset.from;
+                        }
                     }
+                } else {
+                    spoiled.style.display = 'none';
+                    header.classList.remove('spoiler-header-active');
+                    header.classList.add('spoiler-header-inactive');
+                    header.innerHTML = '<i class="material-icons">arrow_right</i><span>' + header.dataset.name + '</span>';
                 }
-            } else {
-                spoiled.style.display = 'none';
-                header.classList.remove('spoiler-header-active');
-                header.classList.add('spoiler-header-inactive');
-                header.innerHTML = '<i class="material-icons">arrow_right</i><span>' + header.dataset.name + '</span>';
-            }
-        })
-    });
+            });
+        })();
+    }
 }
