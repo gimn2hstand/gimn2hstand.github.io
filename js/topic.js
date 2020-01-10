@@ -44,16 +44,12 @@ function insertLabel(element) {
 
 function goClickListener(links, independentFunction) {
     links.forEach(function (link) {
-        if (typeof independentFunction === 'function') {
-            link.addEventListener('click', function () {
+        link.addEventListener('click', function () {
+            if (typeof independentFunction === 'function') {
                 independentFunction();
-                goTo(link.dataset.section);
-            });
-        } else {
-            link.addEventListener('click', function () {
-                goTo(link.dataset.section);
-            });
-        }
+            }
+            goTo(link.dataset.section);
+        });
     });
 }
 
