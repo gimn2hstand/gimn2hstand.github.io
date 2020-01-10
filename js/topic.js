@@ -8,23 +8,28 @@ var topicLoaded = function() {
     content.innerHTML = '<h3 id="topic_title">' + topicName + '</h3>' + content.innerHTML;
     var tableOfContentsHTML = '<b>Содержание:</b><ul>';
     var tableOfContentsNavigationHTML = '<a class="mdl-navigation__link mdl-layout__drawer-navigation-subcategory">Содержание:</a><a class="mdl-navigation__link" onclick="goTop()"><i class="material-icons">arrow_upward</i>Начало страницы</a>';
-    document.querySelectorAll('.content .chapter').forEach(function (chapter) {
+    var chapters = document.querySelectorAll('.content .chapter');
+    for (var i = 0, len = chapters.length; i < len; i++) {
+        var chapter = chapters[i];
         chapter.innerHTML = '<h4>' + chapter.dataset.chapter + '</h4>' + chapter.innerHTML;
         tableOfContentsHTML += '<li><a data-section="' + chapter.id + '">' + chapter.dataset.chapter + '</a></li>';
         tableOfContentsNavigationHTML += '<a class="mdl-navigation__link" data-section="' + chapter.id + '"><i class="material-icons">subdirectory_arrow_right</i>' + chapter.dataset.chapter + '</a>';
         var num = 1;
-        document.querySelectorAll('.content #' + chapter.id + " img").forEach(function (illustration) {
+        var illustrations = document.querySelectorAll('.content #' + chapter.id + " img");
+        for (var ii = 0, ilen = illustrations.length; ii < ilen; ii++) {
+            var illustration = illustrations[ii];
             illustration.src = '../img/topic/' + topicCategory + '/' + topicId + '/' + chapter.id + '/img' + num + '.jpg';
             illustration.alt = chapter.dataset.chapter + ' - ' + (num++);
             var label = insertLabel(illustration);
             if(label) {
                 illustration.alt = label;
             }
-        });
-    });
-    document.querySelectorAll('.content .injection, .piece').forEach(function (video) {
-        insertLabel(video);
-    });
+        }
+    }
+    var pieces = document.querySelectorAll('.content .injection, .piece');
+    for (i = 0, len = pieces.length; i < len; i++) {
+        insertLabel(pieces[i]);
+    }
     document.getElementById('table_of_contents').innerHTML = (tableOfContentsHTML += '</ul>');
     document.getElementById('navigation-table_of_contents').innerHTML = tableOfContentsNavigationHTML;
     goClickListener(document.querySelectorAll('#table_of_contents ul li a'));
@@ -43,14 +48,17 @@ function insertLabel(element) {
 }
 
 function goClickListener(links, independentFunction) {
-    links.forEach(function (link) {
-        link.addEventListener('click', function () {
-            if (typeof independentFunction === 'function') {
-                independentFunction();
-            }
-            goTo(link.dataset.section);
-        });
-    });
+    for (var i = 0, len = links.length; i < len; i++) {
+        (function() {
+            var link = links[i];
+            link.addEventListener('click', function () {
+                if (typeof independentFunction === 'function') {
+                    independentFunction();
+                }
+                goTo(link.dataset.section);
+            });
+        })();
+    }
 }
 
 function goTop() {
