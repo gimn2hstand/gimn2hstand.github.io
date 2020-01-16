@@ -5,13 +5,13 @@ function initSpoilers() {
             var header = headers[i];
             var spoiled = document.getElementById(header.parentElement.dataset.for);
             spoiled.style.display = 'none';
-            header.innerHTML = '<i class="material-icons">arrow_right</i><span>' + header.dataset.name + '</span>';
+            header.innerHTML = '<i class="material-icons spoiler-arrow">arrow_right</i><span>' + header.dataset.name + '</span>';
+            var indicator = header.getElementsByClassName('spoiler-arrow')[0];
             header.addEventListener('click', function () {
                 if (header.classList.contains('spoiler-header-inactive')) {
                     spoiled.style.display = '';
                     header.classList.remove('spoiler-header-inactive');
                     header.classList.add('spoiler-header-active');
-                    header.innerHTML = '<i class="material-icons">arrow_drop_down</i><span>' + header.dataset.name + '</span>';
                     var iframes = spoiled.getElementsByClassName('iframe-injection');
                     for(var i = 0; i < iframes.length; i++) {
                         var iframe = iframes[i];
@@ -19,11 +19,12 @@ function initSpoilers() {
                             iframe.src = iframe.dataset.from;
                         }
                     }
+                    indicator.style.transform = 'rotate(90deg)';
                 } else {
                     spoiled.style.display = 'none';
                     header.classList.remove('spoiler-header-active');
                     header.classList.add('spoiler-header-inactive');
-                    header.innerHTML = '<i class="material-icons">arrow_right</i><span>' + header.dataset.name + '</span>';
+                    indicator.style.transform = 'none';
                 }
             });
         })();
