@@ -153,3 +153,7 @@
     vertical-align: middle;
     -webkit-user-select: none;
 }
+
+.spoiler-arrow {
+    transition: all 0.5s ease;
+}
