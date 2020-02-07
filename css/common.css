@@ -44,6 +44,10 @@
     vertical-align: -3px;
 }
 
+.mdl-mini-footer__right-section {
+    text-align: right;
+}
+
 .mini-logo {
     width: 48px;
     height: 48px;
